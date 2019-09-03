@@ -1,5 +1,6 @@
 # flutter_face_scan_exmple
 
+[pub package](https://pub.flutter-io.cn/packages/flutter_face_scan)
 
 # android:无需配置
 # ios:在Info.plist文件中加入
