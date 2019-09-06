@@ -1,5 +1,50 @@
 # flutter_face_scan_exmple
 
+[pub package](https://pub.flutter-io.cn/packages/flutter_face_scan)
+
+# android:无需配置
+# ios:在Info.plist文件中加入
+````html
+<key>NSCameraUsageDescription</key>
+	<string>需要您的确认才能访问相机</string>
+````
+# 使用
+
+1.初始化
+````dart
+void main() {
+  runApp(MyApp());
+
+  ///初始化
+  FaceScan.init();
+}
+````
+2.打开扫描页面
+````dart
+ FaceScan.openScan(
+  context: context,
+  path: null,
+  faceScanCallBack: (path) {
+    print("返回图片文件路径：" + path);
+  });
+                    
+````
+3.改变扫描页面的一些调用
+````dart
+ ///通知图形界面在识别中
+ FaceScan.Scaning();
+ 
+ ///通知图形界面识别失败
+ FaceScan.ScanFail();
+ 
+ ///识别成功后可关闭页面
+ Navigator.pop(context);
+ 
+ 
+                  
+````
+
+
 A new Flutter application.
 
 ## Getting Started
