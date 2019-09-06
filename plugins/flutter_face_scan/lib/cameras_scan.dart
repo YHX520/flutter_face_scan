@@ -156,6 +156,11 @@ class _CameraScanState extends State<CameraScan> {
   @override
   void dispose() {
     controller.dispose();
+    if (timer != null) {
+      timer.cancel();
+      timer = null;
+    }
+
     super.dispose();
   }
 

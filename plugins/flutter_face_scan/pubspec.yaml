@@ -1,8 +1,8 @@
 name: flutter_face_scan
 description: 人脸扫描
-version: 0.0.1
+version: 0.0.2
 author: yhx<646903573@qq.com>
-homepage:
+homepage: https://github.com/YHX520/flutter_face_scan
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -10,8 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  camera: 0.5.4+1
-  path_provider: 1.2.0
+  camera: ^0.5.4+1
+  path_provider: ^1.2.0
 
 
 
